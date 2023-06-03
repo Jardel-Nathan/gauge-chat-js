@@ -1,0 +1,42 @@
+.chart {
+  width: 414px;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  display: -webkit-box;
+}
+
+.score-text {
+  font-family: sans-serif;
+  position: absolute;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.score-result {
+  font-size: 80px;
+  font-weight: bold;
+}
+
+.label-total {
+  font-size: 20px;
+}
+
+#quarter1,
+#quarter4 {
+  background: rgba(212, 215, 222);
+}
+
+#quarter2 {
+  margin-right: 8px;
+  background: rgba(212, 215, 222);
+}
+
+#quarter3 {
+  margin-left: 8px;
+  background: rgba(212, 215, 222);
+}
+
+#quarter2,
+#quarter3 {
+  margin-bottom: 123px;
+}
