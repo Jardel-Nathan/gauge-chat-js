@@ -53,16 +53,15 @@ function calculateDeg(scoreRest = 100, quarther = 1) {
       return scoreRest * 0.9 + 'deg';
       break;
     case 3:
-      return 90 + parseFloat(scoreRest) * 0.7 + 'deg';
+      return 110 + parseFloat(scoreRest) * 0.3 + 'deg';
       break;
     case 4:
-      return 110 + parseFloat(scoreRest) * 1.5 + 'deg';
+      return (scoreRest < 50 ? 150 : scoreRest > 30 ? 170 : 180) + 'deg';
       break;
   }
 }
 
-
 setInterval(() => {
-  resetChart()
+  resetChart();
   mountGaugeChart(Math.floor(Math.random() * 1000));
-}, 1000)
+}, 1000);
